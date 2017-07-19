@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class ultanClass  //declare class
+class Shape  //declare class
 {
     int w;
     int h;
@@ -13,11 +13,11 @@ class ultanClass  //declare class
 
 };
 
-void ultanClass::setWidth(int width)  //access the member functions and use set methods
+void Shape::setWidth(int width)  //access the member functions and use set methods
 {
     w = width;
 }
-void ultanClass::setHeight(int height)
+void Shape::setHeight(int height)
 {
     h = height;
 }
@@ -30,10 +30,10 @@ int main()
     cin >> height;
     cout<<"Please enter width: ";
     cin >> width;
-    ultanClass square; //declare object of class ultanClass
-    square.setWidth(width);
-    square.setHeight(height);
-    cout<<"The of the square of height " << height << " and width "
-    << width << " is " << square.getArea() << endl;
+    Shape shape; //declare object of class shape
+    shape.setWidth(width);
+    shape.setHeight(height);
+    cout<<"The of the shape of height " << height << " and width "
+    << width << " is " << shape.getArea() << endl;
     return 0;
 }
